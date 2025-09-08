@@ -1,0 +1,15 @@
+:root {
+  --color-green-dark: #14532d;
+  --color-green-darker: #052e16;
+  --color-green: #22c55e;
+  --color-green-light: #a7ffeb;
+  --color-green-gradient: linear-gradient(135deg, #14532d 0%, #052e16 100%);
+  --color-green-gradient-bright: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  --color-white: #fff;
+  --color-black: #111;
+  --color-orange: orange;
+  --color-yellow: #ffb86b;
+  --color-gray-dark: #16211a;
+  --color-gray: #819a91;
+  --color-gray-light: #e6f2ed;
+}
