@@ -20,6 +20,7 @@ linear-gradient(135deg, #22c55e 0%, #16a34a 100%) !important; color: var(--color
             <a
               :href="profileData.resume"
               class="btn btn--outline"
+              download="Samira_Sobhani_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -222,12 +223,14 @@ const scrollToContact = () => {
 
   &__floating-card {
     position: absolute;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--color-accent-cream);
     backdrop-filter: blur(10px);
+    border: 1px solid var(--color-accent-rose);
     border-radius: 12px;
     padding: 1rem 1.5rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-accent);
     animation: float 3s ease-in-out infinite;
+    color: var(--color-accent-burgundy);
 
     &--1 {
       top: 20%;
@@ -366,25 +369,28 @@ const scrollToContact = () => {
   min-width: 140px;
 
   &--primary {
-    background: linear-gradient(45deg, #ffb86b 0%, #fffee6 100%);
-    color: #1a2b22;
-    border: 2px solid transparent;
+    background: var(--color-white);
+    color: var(--color-primary-darkest);
+    border: 2px solid var(--color-white);
 
     &:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      box-shadow: var(--shadow-soft);
+      filter: brightness(0.95);
     }
   }
 
   &--outline {
     background: transparent;
-    color: #819a91;
-    border: 2px solid #819a91;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
 
     &:hover {
-      background: #e6f2ed;
-      border-color: #819a91;
+      background: var(--color-white);
+      border-color: var(--color-white);
+      color: var(--color-primary-darkest);
       transform: translateY(-2px);
+      box-shadow: var(--shadow-soft);
     }
   }
 }

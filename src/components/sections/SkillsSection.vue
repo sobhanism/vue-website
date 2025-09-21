@@ -19,7 +19,16 @@
           <div class="skills__category-header">
             <h3 class="skills__category-title">{{ category.category }}</h3>
             <div class="skills__category-icon">
-              <component :is="getCategoryIcon(category.category)" />
+              <component
+                :is="getCategoryIcon(category.category)"
+                v-if="getCategoryIcon(category.category)"
+              />
+              <svg v-else viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <path d="m12 17h.01"></path>
+              </svg>
+              <!-- Debug: {{ category.category }} -->
             </div>
           </div>
 
@@ -69,7 +78,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, h } from 'vue'
 
 interface Skill {
   name: string
@@ -87,45 +96,144 @@ interface Props {
 
 defineProps<Props>()
 
-// Icon components
+// Icon components using render functions
 const FrontendIcon = defineComponent({
-  template: `
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <polyline points="16 18 22 12 16 6"></polyline>
-      <polyline points="8 6 2 12 8 18"></polyline>
-    </svg>
-  `,
+  name: 'FrontendIcon',
+  render() {
+    return h(
+      'svg',
+      {
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        'stroke-width': '2',
+      },
+      [h('polyline', { points: '16 18 22 12 16 6' }), h('polyline', { points: '8 6 2 12 8 18' })],
+    )
+  },
 })
 
 const BackendIcon = defineComponent({
-  template: `
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-      <line x1="8" y1="21" x2="16" y2="21"></line>
-      <line x1="12" y1="17" x2="12" y2="21"></line>
-    </svg>
-  `,
+  name: 'BackendIcon',
+  render() {
+    return h(
+      'svg',
+      {
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        'stroke-width': '2',
+      },
+      [
+        h('rect', { x: '2', y: '3', width: '20', height: '14', rx: '2', ry: '2' }),
+        h('line', { x1: '8', y1: '21', x2: '16', y2: '21' }),
+        h('line', { x1: '12', y1: '17', x2: '12', y2: '21' }),
+      ],
+    )
+  },
+})
+
+const DatabaseIcon = defineComponent({
+  name: 'DatabaseIcon',
+  render() {
+    return h(
+      'svg',
+      {
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        'stroke-width': '2',
+      },
+      [
+        h('ellipse', { cx: '12', cy: '5', rx: '9', ry: '3' }),
+        h('path', { d: 'm3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5' }),
+        h('path', { d: 'M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3' }),
+      ],
+    )
+  },
+})
+
+const ToolsIcon = defineComponent({
+  name: 'ToolsIcon',
+  render() {
+    return h(
+      'svg',
+      {
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        'stroke-width': '2',
+      },
+      [
+        h('path', {
+          d: 'M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z',
+        }),
+      ],
+    )
+  },
 })
 
 const DesignIcon = defineComponent({
-  template: `
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="m9 9 5 12 1.774-5.226L21 14 9 9z"></path>
-      <path d="m16.071 16.071 4.243 4.243"></path>
-      <path d="m7.188 2.239.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656-2.12 2.122"></path>
-    </svg>
-  `,
+  name: 'DesignIcon',
+  render() {
+    return h(
+      'svg',
+      {
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        'stroke-width': '2',
+      },
+      [
+        h('path', { d: 'm9 9 5 12 1.774-5.226L21 14 9 9z' }),
+        h('path', { d: 'm16.071 16.071 4.243 4.243' }),
+        h('path', {
+          d: 'm7.188 2.239.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656-2.12 2.122',
+        }),
+      ],
+    )
+  },
+})
+
+const MobileIcon = defineComponent({
+  name: 'MobileIcon',
+  render() {
+    return h(
+      'svg',
+      {
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        'stroke-width': '2',
+      },
+      [
+        h('rect', { x: '5', y: '2', width: '14', height: '20', rx: '2', ry: '2' }),
+        h('line', { x1: '12', y1: '18', x2: '12.01', y2: '18' }),
+      ],
+    )
+  },
 })
 
 const getCategoryIcon = (category: string) => {
+  console.log('Category:', category) // برای debug
   switch (category.toLowerCase()) {
     case 'frontend':
       return FrontendIcon
     case 'backend':
       return BackendIcon
+    case 'database':
+      return DatabaseIcon
+    case 'tools':
+      return ToolsIcon
+    case 'design':
     case 'design & tools':
+    case 'tools & other':
+    case 'other':
       return DesignIcon
+    case 'mobile':
+      return MobileIcon
     default:
+      console.warn('Unknown category:', category)
       return FrontendIcon
   }
 }

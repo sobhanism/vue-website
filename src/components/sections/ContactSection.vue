@@ -276,10 +276,11 @@ const handleSubmit = async () => {
   }
 
   &__info-card {
-    background: white;
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-accent-cream) 100%);
     padding: 3rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-accent-rose);
+    box-shadow: var(--shadow-accent);
     height: fit-content;
 
     @media (max-width: 768px) {
@@ -290,7 +291,7 @@ const handleSubmit = async () => {
   &__info-title {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--color-green-dark);
+    color: var(--color-accent-burgundy);
     margin-bottom: 1rem;
   }
 
@@ -315,12 +316,17 @@ const handleSubmit = async () => {
   &__detail-icon {
     width: 50px;
     height: 50px;
-    background: var(--color-green-gradient-bright);
+    background: var(--color-gradient-accent);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     svg {
       width: 24px;
@@ -332,19 +338,19 @@ const handleSubmit = async () => {
   &__detail-content {
     h4 {
       font-weight: 600;
-      color: #1f2937;
+      color: var(--color-accent-burgundy);
       margin-bottom: 0.25rem;
     }
 
     a,
     span {
-      color: var(--color-gray);
+      color: var(--color-accent-coral);
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
     a:hover {
-      color: var(--color-green);
+      color: var(--color-accent-rose);
     }
   }
 
@@ -397,14 +403,15 @@ const handleSubmit = async () => {
 
     &:focus {
       outline: none;
-      border-color: var(--color-green);
+      border-color: var(--color-accent-rose);
       background: white;
+      box-shadow: 0 0 0 3px rgba(171, 134, 177, 0.1);
     }
 
     &:focus + .contact__label,
     &:not(:placeholder-shown) + .contact__label {
       transform: translateY(-0.75rem) scale(0.9);
-      color: var(--color-green);
+      color: var(--color-accent-coral);
       background: white;
       padding: 0 0.5rem;
     }
@@ -429,7 +436,7 @@ const handleSubmit = async () => {
   &__submit-btn {
     width: 100%;
     padding: 1.25rem;
-    background: var(--color-green-gradient-bright);
+    background: var(--color-gradient-accent);
     color: white;
     border: none;
     border-radius: 12px;

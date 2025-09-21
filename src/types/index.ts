@@ -54,7 +54,8 @@ export interface ContactInfo {
   email: string
   location: string
   availability: string
-} //phone: string
+  phone?: string
+}
 
 export interface FormData {
   name: string

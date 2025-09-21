@@ -181,7 +181,7 @@ defineProps<Props>()
   &__check-icon {
     width: 20px;
     height: 20px;
-    color: #22c55e;
+    color: var(--color-accent-coral);
     flex-shrink: 0;
   }
 
@@ -201,17 +201,27 @@ defineProps<Props>()
 
   &__stat {
     text-align: center;
+    padding: 1.5rem;
+    background: var(--color-gradient-warm);
+    border-radius: 16px;
+    border: 1px solid var(--color-accent-coral);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-warm);
+    }
 
     &-number {
       font-size: 2.5rem;
       font-weight: 700;
-      color: var(--color-green);
+      color: var(--color-accent-burgundy);
       line-height: 1;
     }
 
     &-label {
       font-size: 0.9rem;
-      color: var(--color-gray);
+      color: var(--color-accent-coral);
       margin-top: 0.5rem;
     }
   }

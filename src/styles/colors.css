@@ -1,15 +1,63 @@
 :root {
-  --color-green-dark: #14532d;
-  --color-green-darker: #052e16;
-  --color-green: #22c55e;
-  --color-green-light: #a7ffeb;
-  --color-green-gradient: linear-gradient(135deg, #14532d 0%, #052e16 100%);
-  --color-green-gradient-bright: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
-  --color-white: #fff;
-  --color-black: #111;
-  --color-orange: orange;
-  --color-yellow: #ffb86b;
-  --color-gray-dark: #16211a;
-  --color-gray: #819a91;
-  --color-gray-light: #e6f2ed;
+  /* پالت رنگی جدید شما */
+  --color-primary-darkest: #0a400c; /* سبز تیره عمیق */
+  --color-primary-dark: #819067; /* سبز زیتونی */
+  --color-primary: #b1ab86; /* بژ سبز */
+  --color-primary-light: #fefae0; /* کرم روشن */
+
+  /* رنگ‌های مکمل بهبود یافته (مبتنی بر چرخه رنگ) */
+  --color-accent-burgundy: #4a0c0a; /* قرمز عمیق مکمل سبز تیره */
+  --color-accent-coral: #b8826c; /* نارنجی خاموش مکمل سبز زیتونی */
+  --color-accent-mauve: #c4ab86; /* بژ گرم مکمل بژ سبز */
+  --color-accent-cream: #fff5e0; /* کرم گلدن مکمل کرم اصلی */
+
+  /* رنگ‌های خنثی و پشتیبان */
+  --color-neutral-dark: #1a2b1c; /* خاکستری تیره طبیعی */
+  --color-neutral: #5a6b5d; /* خاکستری متوسط */
+  --color-neutral-light: #a8b5aa; /* خاکستری روشن */
+  --color-neutral-lightest: #f5f7f3; /* خاکستری بسیار روشن */
+
+  /* گرادیانت‌های زیبا */
+  --color-gradient-primary: linear-gradient(135deg, #0a400c 0%, #819067 50%, #b1ab86 100%);
+  --color-gradient-accent: linear-gradient(135deg, #4a0c0a 0%, #b8826c 50%, #c4ab86 100%);
+  --color-gradient-soft: linear-gradient(135deg, #b1ab86 0%, #fefae0 100%);
+  --color-gradient-warm: linear-gradient(135deg, #c4ab86 0%, #fff5e0 100%);
+  --color-gradient-dark: linear-gradient(135deg, #0a400c 0%, #1a2b1c 100%);
+
+  /* سایه‌ها با رنگ‌های بهبود یافته */
+  --shadow-primary: 0 4px 24px rgba(10, 64, 12, 0.15);
+  --shadow-accent: 0 4px 24px rgba(74, 12, 10, 0.15);
+  --shadow-warm: 0 4px 20px rgba(196, 171, 134, 0.25);
+  --shadow-soft: 0 2px 12px rgba(177, 171, 134, 0.2);
+
+  /* رنگ‌های سیستمی بروزرسانی شده */
+  --color-white: #ffffff;
+  --color-black: #1a1a1a;
+  --color-success: #b1ab86;
+  --color-warning: #e8d282;
+  --color-error: #c85a5a;
+  --color-info: #7ba8c7;
+
+  /* سازگاری با کدهای قبلی */
+  --color-green-dark: #0a400c;
+  --color-green-darker: #1a2b1c;
+  --color-green: #b1ab86;
+  --color-green-light: #fefae0;
+  --color-green-gradient: var(--color-gradient-primary);
+  --color-green-gradient-bright: var(--color-gradient-soft);
+  --color-gray-dark: var(--color-neutral-dark);
+  --color-gray: var(--color-neutral);
+  --color-gray-light: var(--color-neutral-lightest);
+
+  /* رنگ‌های متن */
+  --text-primary: #0a400c;
+  --text-secondary: #5a6b5d;
+  --text-muted: #a8b5aa;
+  --text-inverse: #fefae0;
+
+  /* رنگ‌های پس‌زمینه */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f7f3;
+  --bg-accent: #fefae0;
+  --bg-dark: #0a400c;
 }

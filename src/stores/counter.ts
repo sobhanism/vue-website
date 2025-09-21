@@ -110,7 +110,8 @@ export const useAppStore = defineStore('app', () => {
     email: 'sobhani.sm@gmail.com',
     location: 'Tehran, Iran',
     availability: 'Available for freelance work',
-  }) //phone: '+98 912 414 3892',
+    phone: '+98 912 414 3892',
+  })
 
   // Navigation Items
   const navigationItems = ref<NavigationItem[]>([

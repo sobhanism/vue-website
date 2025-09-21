@@ -158,7 +158,7 @@ const handleMobileClick = (onClick?: () => void) => {
     gap: 0.75rem;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #333;
+    color: var(--color-accent-burgundy);
     text-decoration: none;
 
     &-img {
@@ -189,13 +189,13 @@ const handleMobileClick = (onClick?: () => void) => {
 
   &__link {
     text-decoration: none;
-    color: #333;
+    color: var(--color-accent-coral);
     font-weight: 500;
     position: relative;
     transition: color 0.3s ease;
 
     &:hover {
-      color: var(--color-green-dark);
+      color: var(--color-accent-burgundy);
     }
 
     &::after {

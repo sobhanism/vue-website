@@ -156,13 +156,15 @@ defineProps<Props>()
     background: var(--color-white);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(34, 197, 94, 0.08);
+    border: 1px solid var(--color-accent-cream);
+    box-shadow: var(--shadow-soft);
     transition: all 0.3s ease;
     animation: fadeInUp 0.8s ease both;
 
     &:hover {
       transform: translateY(-10px);
-      box-shadow: 0 25px 50px rgba(34, 197, 94, 0.15);
+      box-shadow: var(--shadow-accent);
+      border-color: var(--color-accent-rose);
     }
   }
 
@@ -191,7 +193,7 @@ defineProps<Props>()
     left: 0;
     right: 0;
     bottom: 0;
-    background: color-mix(in srgb, var(--color-green) 92%, transparent);
+    background: var(--color-gradient-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,11 +216,10 @@ defineProps<Props>()
     justify-content: center;
     width: 50px;
     height: 50px;
-    background: rgba(34, 197, 94, 0.15);
-    border: 2px solid var(--color-green);
-    color: var(--color-green-dark);
+    background: rgba(177, 171, 134, 0.15);
+    border: 2px solid var(--color-primary);
+    color: var(--color-white);
     border-radius: 50%;
-    color: white;
     text-decoration: none;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
@@ -229,10 +230,11 @@ defineProps<Props>()
     }
 
     &:hover {
-      background: var(--color-green);
-      border-color: var(--color-green-dark);
+      background: var(--color-accent-coral);
+      border-color: var(--color-accent-burgundy);
       color: var(--color-white);
       transform: scale(1.1);
+      box-shadow: var(--shadow-warm);
     }
   }
 
@@ -246,17 +248,17 @@ defineProps<Props>()
   &__title {
     font-size: 1.5rem;
     font-weight: 900;
-    color: var(--color-green-dark);
+    color: var(--color-accent-burgundy);
     margin-bottom: 1rem;
     line-height: 1.3;
   }
 
   &__description {
-    color: var(--color-green-dark);
+    color: var(--color-accent-coral);
     line-height: 1.7;
     margin-bottom: 1.5rem;
     flex-grow: 1;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   &__technologies {
@@ -267,11 +269,21 @@ defineProps<Props>()
 
   &__tech-tag {
     padding: 0.4rem 1rem;
-    background: var(--color-green-gradient-bright);
-    color: white;
+    background: var(--color-accent-cream);
+    color: var(--color-accent-burgundy);
+    border: 1px solid var(--color-accent-coral);
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: var(--color-accent-coral);
+      color: var(--color-white);
+      border-color: var(--color-accent-burgundy);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-warm);
+    }
   }
 
   &__more {
@@ -325,14 +337,15 @@ defineProps<Props>()
 
   &--outline {
     background: transparent;
-    color: #22c55e;
-    border: 2px solid #22c55e;
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary-dark);
 
     &:hover {
-      background: #22c55e;
-      color: white;
+      background: var(--color-gradient-accent);
+      color: var(--color-white);
+      border-color: var(--color-accent-coral);
       transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+      box-shadow: var(--shadow-accent);
     }
   }
 
