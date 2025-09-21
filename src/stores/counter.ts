@@ -19,7 +19,7 @@ export const useAppStore = defineStore('app', () => {
 
   // Profile Data
   const profileData = ref<ProfileData>({
-    name: 'Lenoos',
+    name: 'Samira Sobhani',
     title: 'Frontend Developer',
     subtitle: 'Creating beautiful, functional web experiences',
     image: '/logo.jpg',
@@ -141,14 +141,14 @@ export const useAppStore = defineStore('app', () => {
       id: 3,
       name: 'WhatsApp',
       icon: '/icon/outlined/whatsapp-brand-outlined.svg',
-      href: 'https://wa.me/1234567890',
+      href: 'https://wa.me/989124143892',
       color: '#25D366',
     },
     {
       id: 4,
       name: 'LinkedIn',
       icon: '/icon/outlined/linkedin-brand-outlined.svg',
-      href: 'https://www.linkedin.com/in/samira-sobhani-148300170',
+      href: 'https://www.linkedin.com/in/samirasobhani',
       color: '#0A66C2',
     },
     {

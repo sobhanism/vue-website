@@ -3,10 +3,8 @@
     <div class="navbar__container">
       <!-- Logo -->
       <div class="navbar__logo">
-        <!-- <img src="/logo.jpg" alt="Samira Sobhani" class="navbar__logo-img" /> -->
-        <img src="" alt="lenoos" class="navbar__logo-img" />
-        <!-- <span class="navbar__logo-text">Samira</span> -->
-        <span class="navbar__logo-text">lenoos</span>
+        <img src="../../../public/logo.jpg" alt="Samira Sobhani" class="navbar__logo-img" />
+        <span class="navbar__logo-text">Samira Sobhani</span>
       </div>
 
       <!-- Desktop Navigation -->
