@@ -9,7 +9,7 @@ const router = createRouter({
       name: 'home',
       component: HomePage,
       meta: {
-        title: 'Samira Sobhani - Full Stack Developer',
+        title: 'Samira Sobhani - Frontend Developer',
       },
     },
   ],

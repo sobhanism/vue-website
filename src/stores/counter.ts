@@ -80,27 +80,53 @@ export const useAppStore = defineStore('app', () => {
     {
       category: 'Frontend',
       items: [
-        { name: 'Vue.js', level: 90 },
-        // { name: 'React', level: 85 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'Sass/SCSS', level: 90 },
+        { name: 'Vue 3', level: 95 },
+        { name: 'JavaScript', level: 90 },
+        { name: 'TypeScript', level: 85 },
+        { name: 'HTML5', level: 95 },
+        { name: 'CSS3', level: 90 },
+        { name: 'Quasar', level: 85 },
+        { name: 'Pinia', level: 90 },
+        { name: 'Vue Router', level: 90 },
       ],
     },
-    // {
-    //   category: 'Backend',
-    //   items: [
-    //     { name: 'Node.js', level: 85 },
-    //     { name: 'Python', level: 78 },
-    //     { name: 'PostgreSQL', level: 80 },
-    //     { name: 'MongoDB', level: 75 },
-    //   ],
-    // },
     {
-      category: 'Design & Tools',
+      category: 'Backend',
       items: [
-        { name: 'Figma', level: 70 },
-        { name: 'Git', level: 80 },
-        { name: 'Docker', level: 70 },
+        { name: 'Node.js', level: 80 },
+        { name: 'C#', level: 85 },
+        { name: 'SQL Server', level: 80 },
+        { name: 'RESTful APIs', level: 85 },
+        { name: 'WebSocket', level: 75 },
+      ],
+    },
+    {
+      category: 'Tools & Other',
+      items: [
+        { name: 'Git', level: 90 },
+        { name: 'Linux', level: 80 },
+        { name: 'Windows', level: 90 },
+        { name: 'Scrum', level: 85 },
+        { name: 'Regular Expressions', level: 80 },
+        { name: 'Canvas API', level: 75 },
+      ],
+    },
+    {
+      category: 'Design',
+      items: [
+        { name: 'Figma', level: 85 },
+        { name: 'Photoshop', level: 80 },
+        { name: 'InDesign', level: 75 },
+      ],
+    },
+    {
+      category: 'Soft Skills',
+      items: [
+        { name: 'Communication', level: 95 },
+        { name: 'Problem Solving', level: 90 },
+        { name: 'Adaptability', level: 90 },
+        { name: 'Learning & Development', level: 95 },
+        { name: 'Positive Thinking', level: 90 },
       ],
     },
   ])
