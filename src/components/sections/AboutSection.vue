@@ -38,7 +38,7 @@
             <!-- Stats -->
             <div class="about__stats">
               <div class="about__stat">
-                <div class="about__stat-number">5+</div>
+                <div class="about__stat-number about__stat-number--experience">5+</div>
                 <div class="about__stat-label">Years Experience</div>
               </div>
               <div class="about__stat">
@@ -217,6 +217,11 @@ defineProps<Props>()
       font-weight: 700;
       color: var(--color-accent-burgundy);
       line-height: 1;
+
+      &--experience {
+        color: var(--color-accent-burgundy);
+        font-weight: 800;
+      }
     }
 
     &-label {
@@ -283,12 +288,12 @@ defineProps<Props>()
     right: -2rem;
     width: 120px;
     height: 120px;
-    background: var(--color-green-gradient-bright);
+    background: var(--color-gradient-accent);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 15px 35px color-mix(in srgb, var(--color-green) 30%, transparent);
+    box-shadow: var(--shadow-accent);
     animation: pulse 2s infinite;
 
     @media (max-width: 768px) {
