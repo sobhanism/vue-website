@@ -10,8 +10,8 @@
             <span class="footer__logo-text">Samira Sobhani</span>
           </div>
           <p class="footer__description">
-            Full Stack Developer & UI/UX Designer passionate about creating beautiful, functional
-            web experiences that make a difference.
+            Frontend Developer specialized in Vue.js, passionate about creating modern, responsive
+            web applications with excellent user experience and clean code.
           </p>
           <div class="footer__social">
             <a
