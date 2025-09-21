@@ -252,9 +252,10 @@ const currentYear = computed(() => new Date().getFullYear())
       transition: all 0.3s ease;
 
       &:hover {
-        background: var(--color-green); /* سبز روشن‌تر */
-        border-color: var(--color-green);
+        background: var(--color-accent-burgundy);
+        border-color: var(--color-accent-burgundy);
         transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(74, 12, 10, 0.4);
       }
 
       img {
@@ -292,7 +293,7 @@ const currentYear = computed(() => new Date().getFullYear())
       transition: color 0.3s ease;
 
       &:hover {
-        color: var(--color-orange);
+        color: var(--color-accent-burgundy);
       }
     }
   }
@@ -321,7 +322,7 @@ const currentYear = computed(() => new Date().getFullYear())
       transition: color 0.3s ease;
 
       &:hover {
-        color: #ffa17f;
+        color: var(--color-accent-burgundy);
       }
     }
   }
@@ -329,7 +330,7 @@ const currentYear = computed(() => new Date().getFullYear())
     color: white !important;
     text-decoration: none !important;
     &:hover {
-      color: #ffa17f;
+      color: var(--color-accent-burgundy) !important;
     }
   }
 
@@ -366,7 +367,7 @@ const currentYear = computed(() => new Date().getFullYear())
       }
 
       &:hover {
-        color: #ffa17f;
+        color: var(--color-accent-burgundy);
       }
     }
   }
@@ -406,7 +407,7 @@ const currentYear = computed(() => new Date().getFullYear())
     transition: color 0.3s ease;
 
     &:hover {
-      color: #ffa17f;
+      color: var(--color-accent-burgundy);
     }
   }
 
