@@ -1,6 +1,3 @@
-/* کارت اول: تعداد پروژه‌ها، سبز پررنگ */ .hero__floating-card--1 { background:
-linear-gradient(135deg, #22c55e 0%, #16a34a 100%) !important; color: var(--color-green-dark)
-!important; }
 <template>
   <section id="home" class="hero">
     <div class="hero__container">
@@ -39,12 +36,12 @@ linear-gradient(135deg, #22c55e 0%, #16a34a 100%) !important; color: var(--color
               <span>5+ Projects</span>
             </div>
           </div>
-          <!-- <div class="hero__floating-card hero__floating-card--2">
+          <div class="hero__floating-card hero__floating-card--2">
             <div class="hero__card-content">
               <div class="hero__card-icon">⭐</div>
               <span>UI/UX Design</span>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -262,10 +259,11 @@ const scrollToContact = () => {
     align-items: center;
     gap: 0.5rem;
     font-weight: 600;
-    color: var(--color-white);
+    color: var(--color-green-dark);
 
-    // سبز تیره فقط برای کارت اول
-    .hero__floating-card--1 & {
+    // سبز تیره برای هر دو کارت
+    .hero__floating-card--1 &,
+    .hero__floating-card--2 & {
       color: var(--color-green-dark) !important;
     }
   }
