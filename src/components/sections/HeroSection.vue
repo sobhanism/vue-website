@@ -184,7 +184,7 @@ const scrollToContact = () => {
       flex-direction: column;
       align-items: center;
       gap: 1rem;
-      
+
       .btn {
         width: 100%;
         max-width: 280px;
@@ -271,7 +271,7 @@ const scrollToContact = () => {
     @media (max-width: 768px) {
       padding: 0.8rem 1rem;
       font-size: 0.85rem;
-      
+
       &--1 {
         top: -10px;
         left: -10px;
