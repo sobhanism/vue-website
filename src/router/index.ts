@@ -31,8 +31,7 @@ const router = createRouter({
 // Global navigation guards
 router.beforeEach((to, from, next) => {
   // Set page title
-  // document.title = (to.meta?.title as string) || 'Samira Sobhani'
-  document.title = (to.meta?.title as string) || 'lenoos'
+  document.title = (to.meta?.title as string) || 'Samira Sobhani'
 
   next()
 })

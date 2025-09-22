@@ -98,7 +98,7 @@
       <!-- Footer Bottom -->
       <div class="footer__bottom">
         <div class="footer__copyright">
-          <p>&copy; {{ currentYear }} lenoos. All rights reserved.</p>
+          <p>&copy; {{ currentYear }} Samira Sobhani. All rights reserved.</p>
         </div>
         <div class="footer__links">
           <a href="#" class="footer__link">Privacy Policy</a>
