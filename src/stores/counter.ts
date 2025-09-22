@@ -29,14 +29,18 @@ export const useAppStore = defineStore('app', () => {
   // About Data
   const aboutData = ref<AboutData>({
     title: 'About Me',
-    description: `I'm a passionate frontend developer with over 5 years of experience creating
-      digital solutions that make a difference. I specialize in modern web technologies and have
-      a keen eye for design, ensuring that every project I work on is both functional and beautiful.`,
+    description: `I'm Samira Sobhani, a Frontend Developer specializing in Vue.js with over 5 years of experience in designing and implementing modern, responsive web applications. Throughout various projects, I've utilized Quasar, TypeScript, Pinia, and Vue Router to build professional and scalable user interfaces.
+
+My expertise in development tools such as Git, Linux, and Windows, along with experience working with Node.js and SQL Server, enables me to deliver complex projects with high quality and clean code architecture.
+
+I'm passionate about learning new technologies, problem-solving, and team collaboration. Beyond technical skills, I possess strong communication abilities, positive thinking, and adaptability to new challenges and technologies.`,
     highlights: [
-      '5+ years of web development experience',
-      'Specialized in Vue.js, React, and Node.js',
-      'UI/UX design with modern tools',
-      'Agile development methodologies',
+      '5+ years of frontend development experience',
+      'Vue.js expert with Quasar, TypeScript, and Pinia mastery',
+      'Proficient in Node.js, C#, and SQL Server development',
+      'Strong communication, problem-solving, and adaptability skills',
+      'Experience with Git, Linux, and modern development workflows',
+      'Canvas API and Regular Expressions implementation expertise',
     ],
     image: '/01.jpg',
   })

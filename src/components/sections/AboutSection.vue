@@ -13,6 +13,12 @@
           <div class="about__text">
             <p class="about__description">
               {{ aboutData.description }}
+              <br /><br />
+              You can explore my portfolio and contributions on
+              <a href="https://github.com/sobhanism" target="_blank" rel="noopener noreferrer"
+                >GitHub</a
+              >
+              to see examples of my work and open-source contributions.
             </p>
 
             <div class="about__highlights">
@@ -124,14 +130,15 @@ defineProps<Props>()
 
   &__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 400px;
     gap: 6rem;
-    align-items: center;
+    align-items: start;
 
     @media (max-width: 968px) {
       grid-template-columns: 1fr;
       gap: 3rem;
       text-align: center;
+      align-items: center;
     }
   }
 
