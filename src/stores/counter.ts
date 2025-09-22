@@ -50,7 +50,8 @@ I'm passionate about learning new technologies, problem-solving, and team collab
     {
       id: 1,
       title: 'Vue Personal Website',
-      description: 'Modern personal portfolio website built with Vue 3, TypeScript, and responsive design principles',
+      description:
+        'Modern personal portfolio website built with Vue 3, TypeScript, and responsive design principles',
       image: '/vue-website-preview.jpg',
       technologies: ['Vue 3', 'TypeScript', 'SCSS', 'Vite', 'Pinia'],
       link: 'https://github.com/sobhanism/vue-website',
@@ -59,7 +60,8 @@ I'm passionate about learning new technologies, problem-solving, and team collab
     {
       id: 2,
       title: 'Tapsi Landing Page Clone',
-      description: 'Pixel-perfect recreation of Tapsi ride-sharing service landing page with modern CSS techniques',
+      description:
+        'Pixel-perfect recreation of Tapsi ride-sharing service landing page with modern CSS techniques',
       image: '/tapsi-project-preview.jpg',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'FontAwesome'],
       link: 'https://github.com/sobhanism/tapsi-project',
@@ -68,7 +70,8 @@ I'm passionate about learning new technologies, problem-solving, and team collab
     {
       id: 3,
       title: 'Business Website Template',
-      description: 'Professional business website template with modern UI/UX design and interactive components',
+      description:
+        'Professional business website template with modern UI/UX design and interactive components',
       image: '/business-website-preview.jpg',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Grid', 'Animation'],
       link: 'https://github.com/sobhanism/website',
