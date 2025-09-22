@@ -178,15 +178,23 @@ const currentYear = computed(() => new Date().getFullYear())
     gap: 3rem;
     margin-bottom: 3rem;
 
+    @media (max-width: 1024px) {
+      gap: 2.5rem;
+    }
+
     @media (max-width: 968px) {
       grid-template-columns: 1fr 1fr;
-      gap: 2.5rem;
+      gap: 2rem;
     }
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 1.5rem;
       text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      gap: 1rem;
     }
   }
 

@@ -269,9 +269,17 @@ const handleSubmit = async () => {
     gap: 4rem;
     align-items: start;
 
+    @media (max-width: 1024px) {
+      gap: 3rem;
+    }
+
     @media (max-width: 968px) {
       grid-template-columns: 1fr;
-      gap: 3rem;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 480px) {
+      gap: 2rem;
     }
   }
 

@@ -116,10 +116,16 @@ const scrollToContact = () => {
     align-items: center;
     min-height: calc(100vh - 160px);
 
-    @media (max-width: 768px) {
+    @media (max-width: 968px) {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 3rem;
       text-align: center;
+      padding: 2rem 0;
+    }
+
+    @media (max-width: 768px) {
+      gap: 2rem;
+      padding: 1rem 0;
     }
   }
 
@@ -170,8 +176,19 @@ const scrollToContact = () => {
     gap: 1.5rem;
     flex-wrap: wrap;
 
-    @media (max-width: 768px) {
+    @media (max-width: 968px) {
       justify-content: center;
+    }
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      
+      .btn {
+        width: 100%;
+        max-width: 280px;
+      }
     }
   }
 
@@ -191,9 +208,19 @@ const scrollToContact = () => {
     width: 350px;
     height: 350px;
 
+    @media (max-width: 968px) {
+      width: 300px;
+      height: 300px;
+    }
+
     @media (max-width: 768px) {
-      width: 280px;
-      height: 280px;
+      width: 250px;
+      height: 250px;
+    }
+
+    @media (max-width: 480px) {
+      width: 220px;
+      height: 220px;
     }
   }
 
@@ -242,15 +269,24 @@ const scrollToContact = () => {
     }
 
     @media (max-width: 768px) {
+      padding: 0.8rem 1rem;
+      font-size: 0.85rem;
+      
       &--1 {
-        top: 10%;
-        left: 5%;
+        top: -10px;
+        left: -10px;
+        transform: scale(0.9);
       }
 
       &--2 {
-        bottom: 10%;
-        right: 5%;
+        bottom: -10px;
+        right: -10px;
+        transform: scale(0.9);
       }
+    }
+
+    @media (max-width: 480px) {
+      display: none; // مخفی کردن کارت‌ها در صفحات خیلی کوچک
     }
   }
 
