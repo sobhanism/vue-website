@@ -36,11 +36,11 @@
             <div v-for="skill in category.items" :key="skill.name" class="skills__item">
               <div class="skills__item-header">
                 <span class="skills__item-name">{{ skill.name }}</span>
-                <span class="skills__item-level">{{ skill.level }}%</span>
+                <!-- <span class="skills__item-level">{{ skill.level }}%</span> -->
               </div>
-              <div class="skills__progress">
+              <!-- <div class="skills__progress">
                 <div class="skills__progress-bar" :style="{ width: `${skill.level}%` }"></div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
