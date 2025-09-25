@@ -43,8 +43,16 @@
     </div>
 
     <!-- Mobile Menu Overlay -->
-    <div v-if="isMenuOpen" class="navbar__overlay" @click="closeMenu">
+    <div v-if="isMenuOpen" class="navbar__overlay">
       <div class="navbar__mobile-menu">
+        <button class="navbar__close-btn" @click="closeMenu" aria-label="بستن منو" type="button">
+          <img
+            src="../../../public/icon/outlined/close.svg"
+            alt="بستن منو"
+            width="24"
+            height="24"
+          />
+        </button>
         <ul class="navbar__mobile-list">
           <li v-for="item in navigationItems" :key="item.id" class="navbar__mobile-item">
             <a
