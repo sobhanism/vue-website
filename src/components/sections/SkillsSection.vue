@@ -28,7 +28,6 @@
                 <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                 <path d="m12 17h.01"></path>
               </svg>
-              <!-- Debug: {{ category.category }} -->
             </div>
           </div>
 
@@ -36,11 +35,7 @@
             <div v-for="skill in category.items" :key="skill.name" class="skills__item">
               <div class="skills__item-header">
                 <span class="skills__item-name">{{ skill.name }}</span>
-                <!-- <span class="skills__item-level">{{ skill.level }}%</span> -->
               </div>
-              <!-- <div class="skills__progress">
-                <div class="skills__progress-bar" :style="{ width: `${skill.level}%` }"></div>
-              </div> -->
             </div>
           </div>
         </div>

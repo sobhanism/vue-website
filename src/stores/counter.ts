@@ -97,7 +97,6 @@ I'm passionate about learning new technologies, problem-solving, and team collab
     {
       category: 'Backend',
       items: [
-        { name: 'Node.js', level: 80 },
         { name: 'C#', level: 85 },
         { name: 'SQL Server', level: 80 },
         { name: 'RESTful APIs', level: 85 },
