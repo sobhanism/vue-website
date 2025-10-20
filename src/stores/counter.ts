@@ -153,13 +153,13 @@ I'm passionate about learning new technologies, problem-solving, and team collab
 
   // Social Media Items
   const socialMediaItems = ref<SocialMediaItem[]>([
-    {
-      id: 1,
-      name: 'Instagram',
-      icon: '/icon/outlined/instagram-brand-outlined.svg',
-      href: 'https://instagram.com/sobhani.sm',
-      color: '#E4405F',
-    },
+    // {
+    //   id: 1,
+    //   name: 'Instagram',
+    //   icon: '/icon/outlined/instagram-brand-outlined.svg',
+    //   href: 'https://instagram.com/sobhani.sm',
+    //   color: '#E4405F',
+    // },
     {
       id: 2,
       name: 'Telegram',

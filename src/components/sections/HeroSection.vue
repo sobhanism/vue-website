@@ -30,7 +30,7 @@
             <img :src="profileData.image" :alt="profileData.name" class="hero__image" />
             <div class="hero__image-bg"></div>
           </div>
-          <div class="hero__floating-card hero__floating-card--1">
+          <!-- <div class="hero__floating-card hero__floating-card--1">
             <div class="hero__card-content">
               <div class="hero__card-icon">💼</div>
               <span>5+ Projects</span>
@@ -41,7 +41,7 @@
               <div class="hero__card-icon">⭐</div>
               <span>UI/UX Design</span>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
